@@ -1,0 +1,97 @@
+body, ul
+  padding: 0
+  margin: 0
+  background-color: white
+
+.App
+  position: relative
+
+.appHeader
+  display: flex
+  justify-content: space-between
+  align-items: center
+  max-width: 90%
+  margin: 0 auto
+  background-color: #f3f1f1
+  box-shadow: 5px 5px 5px #7a7777
+
+  .headerContainer
+    width: 70%
+
+  .mainMenu
+    display: flex
+    justify-content: space-around
+    list-style-type: none
+    width: 100%
+    font-size: 20px
+    background-color: #f3f1f1
+    li
+      a
+        display: block
+        text-decoration: none
+        color: black
+
+      a.active
+        color: red
+        text-decoration: underline
+
+      a:hover
+        color: blue
+
+  .linkBlock
+    display: flex
+
+    .signup
+      margin: 20px 0
+      padding: 10px 20px
+      height: 20px
+      font-size: 18px
+      color: white
+      background-color: #3f4eae
+      border-right: 1px solid grey
+      border-radius: 5px 0px 0px 5px
+      text-decoration: none
+      box-shadow: 3px 3px 3px #7a7777
+      &.active
+        color: white
+        background-color: red
+        text-decoration: none
+        box-shadow: none
+
+    .signin
+      margin: 20px 10px 20px 0
+      padding: 10px 20px
+      height: 20px
+      font-size: 18px
+      color: white
+      background-color: #3f4eae
+      border: none
+      border-radius: 0px 5px 5px 0px
+      text-decoration: none
+      box-shadow: 3px 3px 3px #7a7777
+      &.active
+        color: white
+        background-color: red
+        text-decoration: none
+        box-shadow: none
+
+.overlay
+  position: fixed
+  top: 0
+  left: 0
+  bottom: 0
+  right: 0
+  background: rgba(0, 0, 0, 0.3)
+  display: none
+  &.show
+    display: block
+
+  .dialog
+    background: white
+    border-radius: 5px
+    padding: 20px
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    z-index: 1

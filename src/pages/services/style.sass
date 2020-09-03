@@ -1,0 +1,93 @@
+.services
+  position: relative
+
+  .procure
+    color: white
+    font-size: 16px
+    background-color: #0d70d0
+    padding: 5px
+    border-radius: 3px
+    border: 1px solid #06417a
+    &:hover
+      cursor: pointer
+      background-color: #0c5fb0
+    &.red
+      background-color: red
+    &.green
+      background-color: green
+    &.brown
+      background-color: brown
+
+  .over
+    pointer-events: none
+    display: none
+    &.visible
+      display: block
+
+    .dial
+      display: flex
+      pointer-events: auto
+      align-items: center
+      min-height: 35px
+      width: 300px
+      justify-content: space-between
+      background-color: #0d70d0
+      border-radius: 5px
+      padding: 5px
+      margin: 20px
+      box-shadow: 3px 3px 3px #5a5858
+      &.red
+        background-color: red
+      &.green
+        width: 500px
+        background-color: green
+      &.brown
+        background-color: brown
+
+      .procureText
+        color: white
+
+      .closeWrapper
+        height: 100%
+        display: flex
+        align-items: center
+
+        .yum
+          background-color: #0d70d0
+          border: none
+          color: #cbc9c9
+          font-weight: bold
+          font-size: 18px
+          &.red
+            background-color: red
+          &.green
+            background-color: green
+          &.brown
+            background-color: brown
+
+          height: 100%
+          &:hover
+            background-color: #5ca3e7
+            cursor: pointer
+            color: #faf8f8
+          a
+            text-decoration: none
+            color: #cbc9c9
+
+        .closeImg
+          height: 20px
+          object-fit: contain
+          line-height: 35px
+          &:hover
+            background-color: #5ca3e7
+            cursor: pointer
+
+.toastList
+  list-style-type: none
+  display: flex
+  li
+    margin: 50px
+
+
+
+
